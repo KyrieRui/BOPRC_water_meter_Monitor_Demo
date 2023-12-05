@@ -11,7 +11,6 @@ function App() {
             <div className="header">
                 <img src ={logo} alt={"My Logo"} />
                 <h1>BOPRC Water Meters Monitor Dashboard</h1>
-                <h1>Dashboard</h1>
             </div>
             <div className="charts-grid">
                 <div className="chart-item">

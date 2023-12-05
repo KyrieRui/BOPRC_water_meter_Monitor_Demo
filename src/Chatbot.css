@@ -3,17 +3,17 @@
 .chatbot-container {
   /*margin: 0;*/
   /*width auto*/
-  margin-top: 30px;
+  margin-top: 50px;
   margin-left: auto;
   border: 3px solid #ccc;
   border-radius: 5px;
-  padding: 25px;
+  padding: 29px;
   background-color: #f8f8f8;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
 .chatbot-messages {
-  height: 600px;
+  height: 500px;
   overflow-y: scroll;
   padding: 8px;
 }
