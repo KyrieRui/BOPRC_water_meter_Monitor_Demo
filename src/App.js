@@ -3,12 +3,13 @@ import React from "react";
 import Chatbot from "./Chatbot";
 import "./App.css";
 import { BarChart, LineChart, PieChart, RadarChart } from "./ChartComponents";
+import logo from "./site-logo.jpg";
 
 function App() {
     return (
         <div className="app-container">
             <div className="header">
-                <img src ="/Users/zwang/Desktop/web_chatbot/ai-chatbot-app/src/site-logo.jpg" alt={"My Logo"} />
+                <img src ={logo} alt={"My Logo"} />
                 <h1>BOPRC Water Meters Monitor Dashboard</h1>
                 <h1>Dashboard</h1>
             </div>
