@@ -1,13 +1,13 @@
 /* Chatbot.css */
 
 .chatbot-container {
-  /*margin: 0;*/
-  /*width auto*/
+  /*width: 100%;*/
   margin-top: 50px;
   margin-left: auto;
+  margin-right: 28px;
   border: 3px solid #ccc;
   border-radius: 5px;
-  padding: 29px;
+  padding: 33px;
   background-color: #f8f8f8;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }

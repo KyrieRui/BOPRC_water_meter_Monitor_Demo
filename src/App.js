@@ -4,6 +4,7 @@ import Chatbot from "./Chatbot";
 import "./App.css";
 import { BarChart, LineChart, PieChart, RadarChart } from "./ChartComponents";
 import logo from "./site-logo.jpg";
+import meter from "./water_01.png";
 
 function App() {
     return (
@@ -17,7 +18,8 @@ function App() {
                     <BarChart />
                 </div>
                 <div className="chart-item">
-                    <LineChart />
+                    <img src={meter} alt={"water_meter"}/>
+                    {/*<LineChart />*/}
                 </div>
                 <div className="chart-item">
                     <PieChart />

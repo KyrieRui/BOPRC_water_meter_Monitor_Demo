@@ -12,10 +12,10 @@ export function BarChart() {
         barChart = new Chart(ctx, {
             type: "bar",
             data: {
-                labels: ["Red", "Blue", "Yellow", "Green", "Purple", "Orange"],
+                labels: ["2018", "2019", "2020", "2021", "2022", "2023"],
                 datasets: [
                     {
-                        label: "# of Votes",
+                        label: "Water Usage (m3)",
                         data: [12, 19, 3, 5, 2, 3],
                         backgroundColor: [
                             "rgba(255, 99, 132, 0.2)",
@@ -95,10 +95,10 @@ export function PieChart() {
         pieChart = new Chart(ctx, {
             type: "pie",
             data: {
-                labels: ["Red", "Blue", "Yellow"],
+                labels: ["High", "Low", "Middle"],
                 datasets: [
                     {
-                        label: "My First Dataset",
+                        label: "Current year AQTS Location usages",
                         data: [300, 50, 100],
                         backgroundColor: ["rgb(255, 99, 132)", "rgb(54, 162, 235)", "rgb(255, 205, 86)"],
                     },
@@ -124,10 +124,10 @@ export function RadarChart() {
         radarChart = new Chart(ctx, {
             type: "radar",
             data: {
-                labels: ["Eating", "Drinking", "Sleeping", "Designing", "Coding", "Cycling", "Running"],
+                labels: ["Over 20,000", "Over 30,000", "Over 40,000", "Over 50,000", "Over 60,000", "Over 70,000", "Over 80,000"],
                 datasets: [
                     {
-                        label: "My First Dataset",
+                        label: "Current Year Water records",
                         data: [65, 59, 90, 81, 56, 55, 40],
                         backgroundColor: "rgba(255, 99, 132, 0.2)",
                         borderColor: "rgb(255, 99, 132)",
