@@ -6,4 +6,4 @@ When the text message is recognized, the employee chooses to enter the informati
 Also on the left side of the webpage is the ability to visualize the books in the database.
 
 ## The following is the demo of the website
-![image](/Users/zwang/Documents/GitHub/BOPRC_water_meter_Monitor_Demo/web_page_demo.png)
+![image](/Users/zwang/Documents/GitHub/BOPRC_water_meter_Monitor_Demo/WechatIMG6764.png)
