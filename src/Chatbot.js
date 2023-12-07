@@ -5,9 +5,11 @@ import "./Chatbot.css";
 const Chatbot = () => {
   const [input, setInput] = useState("");
   const [messages, setMessages] = useState([]);
+  const [isLoading, setIsLoading] = useState(false);
 
   const sendMessage = async (prompt) => {
     try {
+      setIsLoading(true);
       const response = await axios.post('http://localhost:8000/complete', {
         prompt,
       }, {
@@ -16,12 +18,15 @@ const Chatbot = () => {
           'Access-Control-Allow-Origin': '*'
         }
       });
-      const botReply = response?.data?.data?.choices?.[0]?.text;
+      console.log(response);
+      const botReply = response?.data?.data;
       if (botReply) {
         setMessages((prevMessages) => [...prevMessages, { text: botReply, isBot: true }]);
       }
     } catch (error) {
       console.error('Error:', error);
+    } finally {
+      setIsLoading(false);
     }
   };
 
@@ -56,6 +61,7 @@ const Chatbot = () => {
               placeholder="Type your message..."
           />
           <button type="submit">Send</button>
+          {isLoading && <div className="loading-indicator">Loading...</div>}
         </form>
       </div>
   );

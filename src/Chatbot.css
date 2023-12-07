@@ -35,6 +35,8 @@
 .ai-message {
   background-color: #f0f0f0;
   text-align: left;
+  word-wrap: break-word; /* 在单词内换行 */
+  white-space: pre-wrap; /* 保留空格和换行符 */
 }
 
 .chatbot-input-form {
