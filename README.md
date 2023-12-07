@@ -6,4 +6,4 @@ When the text message is recognized, the employee chooses to enter the informati
 Also on the left side of the webpage is the ability to visualize the books in the database.
 
 ## The following is the demo of the website
-![image](WechatIMG6764.png)
+![image](WX20231207-154651@2x.png)
