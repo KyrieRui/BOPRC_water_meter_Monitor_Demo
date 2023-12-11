@@ -22,3 +22,7 @@ https://python.langchain.com/docs/use_cases/question_answering/local_retrieval_q
 ```ssh
 ValueError: Expected EmbeddingFunction.__call__ to have the following signature: odict_keys(['self', 'input']), got odict_keys(['self', 'args', 'kwargs'])
 ```
+
+## The demo out put:
+
+![image](result.png)
