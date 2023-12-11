@@ -25,4 +25,4 @@ ValueError: Expected EmbeddingFunction.__call__ to have the following signature:
 
 ## The demo out put:
 
-![image](result.png)
+![image](result_01.png)
