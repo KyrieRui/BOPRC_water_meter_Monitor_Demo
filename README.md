@@ -23,6 +23,6 @@ https://python.langchain.com/docs/use_cases/question_answering/local_retrieval_q
 ValueError: Expected EmbeddingFunction.__call__ to have the following signature: odict_keys(['self', 'input']), got odict_keys(['self', 'args', 'kwargs'])
 ```
 
-## The demo out put:
+## The demo out put (There are still bugs, probably in the CSV reading function, causing the model to incorrectly read id4 as id1, but some of the information is read correctly):
 
 ![image](result_01.png)
