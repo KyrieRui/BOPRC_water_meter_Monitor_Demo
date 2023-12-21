@@ -19,8 +19,8 @@ const Chatbot = () => {
         }
       });
       console.log(response);
-      // const botReply = response?.data?.data;
-      const botReply = response?.data?.data?.result;
+      const botReply = response?.data?.data;
+      // const botReply = response?.data?.data?.result;
 
       if (botReply) {
         setMessages((prevMessages) => [...prevMessages, { text: botReply, isBot: true }]);
