@@ -10,23 +10,30 @@ const Chatbot = () => {
   const sendMessage = async (prompt) => {
     try {
       setIsLoading(true);
-      const response = await axios.post('http://localhost:8000/complete', {
-        prompt,
-      }, {
-        headers: {
-          'Content-Type': 'application/json',
-          'Access-Control-Allow-Origin': '*'
+      const response = await axios.post(
+        "http://localhost:8000/complete",
+        {
+          prompt,
+        },
+        {
+          headers: {
+            "Content-Type": "application/json",
+            "Access-Control-Allow-Origin": "*",
+          },
         }
-      });
+      );
       console.log(response);
-      const botReply = response?.data?.data;
-      // const botReply = response?.data?.data?.result;
+      // const botReply = response?.data?.data;
+      const botReply = response?.data?.data?.result;
 
       if (botReply) {
-        setMessages((prevMessages) => [...prevMessages, { text: botReply, isBot: true }]);
+        setMessages((prevMessages) => [
+          ...prevMessages,
+          { text: botReply, isBot: true },
+        ]);
       }
     } catch (error) {
-      console.error('Error:', error);
+      console.error("Error:", error);
     } finally {
       setIsLoading(false);
     }
@@ -42,30 +49,30 @@ const Chatbot = () => {
   };
 
   return (
-      <div className="chatbot-container">
-        <div className="chatbot-messages">
-          {messages.map((message, index) => (
-              <div
-                  key={index}
-                  className={`message ${
-                      message.user ? "user-message" : "ai-message"
-                  }`}
-              >
-                {message.text}
-              </div>
-          ))}
-        </div>
-        <form className="chatbot-input-form" onSubmit={handleSubmit}>
-          <input
-              type="text"
-              value={input}
-              onChange={(e) => setInput(e.target.value)}
-              placeholder="Type your message..."
-          />
-          <button type="submit">Send</button>
-          {isLoading && <div className="loading-indicator">Loading...</div>}
-        </form>
+    <div className="chatbot-container">
+      <div className="chatbot-messages">
+        {messages.map((message, index) => (
+          <div
+            key={index}
+            className={`message ${
+              message.user ? "user-message" : "ai-message"
+            }`}
+          >
+            {message.text}
+          </div>
+        ))}
       </div>
+      <form className="chatbot-input-form" onSubmit={handleSubmit}>
+        <input
+          type="text"
+          value={input}
+          onChange={(e) => setInput(e.target.value)}
+          placeholder="Type your message..."
+        />
+        <button type="submit">Send</button>
+        {isLoading && <div className="loading-indicator">Loading...</div>}
+      </form>
+    </div>
   );
 };
 
