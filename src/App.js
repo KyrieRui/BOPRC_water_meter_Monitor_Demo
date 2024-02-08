@@ -18,8 +18,8 @@ function App() {
           <BarChart />
         </div>
         <div className="chart-item">
+          <button onClick={() => alert("Meter Reading")}>Upload Image</button>
           <img src={meter} alt={"water_meter"} />
-          {/*<LineChart />*/}
         </div>
         <div className="chart-item">
           <PieChart />
