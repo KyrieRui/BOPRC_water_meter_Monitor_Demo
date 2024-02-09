@@ -34,6 +34,12 @@
   box-shadow: 0 5px 5px 0 rgb(0 0 0 / 10%), 0 1px 2px -1px rgb(0 0 0 / 10%);
 }
 
+.chatbot-container {
+  width: 80%;
+  margin-top: 50px;
+  margin-left: calc(8% - 10px);
+}
+
 .chatbot-container h1 {
   text-align: center;
   box-shadow: 0 4px 8px #8bd7f1;
@@ -55,6 +61,7 @@
 }
 
 .chart-item {
+  margin-left: -60px;
   width: 400px;
   height: 400px;
 }
